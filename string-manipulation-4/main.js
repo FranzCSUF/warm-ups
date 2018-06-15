@@ -15,9 +15,10 @@ function indexOf(string, substring) {
     for (var i = 0; i < string.length; i++) {
       if (string[i] === substring[0]) {
         for (var o = 0; o < substring.length; o++) {
-          if (substring[0] === string[i + o]) {
-            index = i
+          if (substring[o] === string[i + o]) {
+            index = 1
           }
+          else index = -1
         }
       }
     }
